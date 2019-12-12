@@ -1,1 +1,74 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Foro Tech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                    <div [routerLink]="['/register']" routerLinkActive="router-link-active"><a class="nav-link">Register</a></div>
+                </li>
+            <li class="nav-item">
+              <div [routerLink]="['/login']" routerLinkActive="router-link-active"><a class="nav-link">Login</a></div>
+            </li>
+            
+          </ul>
+          <span class="navbar-text">
+          </span>
+        </div>
+      </nav>
+
+      <div class="container">
+          <br>
+            <h2>Default Thread</h2>
+            <br><br>
+            <div class="media">
+              <div class="media-left">
+                <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:45px">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <br>
+                <!-- Nested media object -->
+                <div class="media">
+                  <div class="media-left">
+                    <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:45px">
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+                    <!-- Nested media object -->
+                    <div class="media">
+                      <div class="media-left">
+                        <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:45px">
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+    </div>
+        
+</body>
+</html>
