@@ -19,8 +19,7 @@
 
 .texto{  
     position: absolute;
-    left: 25.43%;
-    right: 29.43%;;
+    left: 18.43%;
     top: 9.77%;
     bottom: 77.34%;
 
@@ -37,14 +36,15 @@
     font-family: 'Oxygen', sans-serif;
 }
 
-.username{
+#username{
     position: absolute;
     left: 17.61%;
-    top: 32.05%;
+    top: 27.05%;
     bottom: 63.55%;
     width: 60%;
 
     background-color: #282828;
+    color: #FFFFFF;
 
     border: none;
     border-bottom: 3px solid #BB86FC;
@@ -52,14 +52,15 @@
     font-family: 'Oxygen', sans-serif;
 }
 
-.password{
+#email{
     position: absolute;
     left: 17.61%;
-    top: 43.36%;
+    top: 37.36%;
     bottom: 52.08%;
     width: 60%;
 
     background-color: #282828;
+    color: #FFFFFF;
 
     border: none;
     border-bottom: 3px solid #BB86FC;
@@ -67,8 +68,100 @@
     font-family: 'Oxygen', sans-serif;
 }
 
-::placeholder{
-    color: #BB86FC;
+#password{
+    position: absolute;
+    left: 17.61%;
+    top: 47.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+    color: #FFFFFF;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+#birthday{
+    position: absolute;
+    left: 17.61%;
+    top: 57.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+    color: #FFFFFF;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+#country{
+    position: absolute;
+    left: 17.61%;
+    top: 67.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+    color: #FFFFFF;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+.loginbutton{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 2%;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: larger;
+
+    border: none;
+    background-color: #BB86FC;
+    color: #FFFFFF;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #422918;
+}
+
+.loginbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.loginbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.loginbutton:hover span {
+    padding-right: 25px;
+}
+  
+.loginbutton:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .button {
@@ -86,7 +179,7 @@
     margin: 5px;
 
     position: absolute;
-    bottom: 32.08%;
+    bottom: 9.08%;
     left: 23.61%;
 
     font-family: 'Oxygen', sans-serif;
