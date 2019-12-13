@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  registerUserData = {}
+  registerUserData = {};
   constructor( private userService: UserService, private router: Router) { }
 
   ngOnInit() {

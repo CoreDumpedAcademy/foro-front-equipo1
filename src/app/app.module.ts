@@ -16,7 +16,7 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +24,7 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [UserService, AuthGuard, 
+  providers: [UserService, AuthGuard,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptorService,

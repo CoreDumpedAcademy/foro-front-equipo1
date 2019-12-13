@@ -9,5 +9,5 @@ import { UserService } from './services/user.service';
 export class AppComponent {
   title = 'Front';
 
-  constructor(private userService: UserService){}
+  constructor(private userService: UserService) { }
 }

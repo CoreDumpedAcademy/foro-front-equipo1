@@ -19,10 +19,13 @@
     </div>
     <div class="rectangulo">
       <br>
+      <div class="registerbutton">
+        <a routerLink = '/register' routerLinkActive = 'active'><button class="registerbutton" type="submit" style="vertical-align:middle"><span>Register</span></button></a>
+      </div>
       <div class="texto">LOGIN</div>
       <form #formulario="ngForm" (ngSubmit)="Login(formulario.form)">
-        <input placeholder="  Username" name="username" type="text" class="username" ngModel required><br>
-        <input placeholder="  Password" name="password" type="password" class="password" ngModel required><br>
+        <input placeholder="  Username" name="username" type="text" class="form-control" id="username" ngModel required><br>
+        <input placeholder="  Password" name="password" type="password" class="form-control" id="password" ngModel required><br>
         <button class="button" type="submit" style="vertical-align:middle"><span>Send</span></button>
       </form>
     </div>
