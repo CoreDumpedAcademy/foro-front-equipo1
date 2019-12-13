@@ -15,7 +15,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-  Register(data) {
+  register(data) {
+    console.log(data.value);
     this.userService.Register(data.value).subscribe((response: { token: string }) => {
       console.log(data);
       localStorage.setItem('token', response.token);

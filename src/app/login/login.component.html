@@ -20,12 +20,12 @@
     <div class="rectangulo">
       <br>
       <div class="registerbutton">
-        <a routerLink = '/register' routerLinkActive = 'active'><button class="registerbutton" type="submit" style="vertical-align:middle"><span>Register</span></button></a>
+        <a [routerLink]="['/register']"><button class="registerbutton" type="submit" style="vertical-align:middle"><span>Register</span></button></a>
       </div>
       <div class="texto">LOGIN</div>
-      <form #formulario="ngForm" (ngSubmit)="Login(formulario.form)">
-        <input placeholder="  Username" name="username" type="text" class="form-control" id="username" ngModel required><br>
-        <input placeholder="  Password" name="password" type="password" class="form-control" id="password" ngModel required><br>
+      <form #formulario="ngForm" (ngSubmit)="login(formulario.form)">
+        <input placeholder="Username" name="userName" type="text" class="form-control" id="username" ngModel required><br>
+        <input placeholder="Password" name="password" type="password" class="form-control" id="password" ngModel required><br>
         <button class="button" type="submit" style="vertical-align:middle"><span>Send</span></button>
       </form>
     </div>

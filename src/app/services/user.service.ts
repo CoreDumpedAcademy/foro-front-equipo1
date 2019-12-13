@@ -9,11 +9,11 @@ export class UserService {
   constructor( private http: HttpClient, private router: Router) { }
 
   Register(data) {
-    return this.http.post('http://localhost:3000/register', data);
+    return this.http.post('http://localhost:3000/user/register', data);
   }
 
-  LogIn(data) {
-    return this.http.post('http://localhost:3000/login', data);
+  login(data) {
+    return this.http.post('http://localhost:3000/user/login', data);
   }
 
   LoggedIn() {

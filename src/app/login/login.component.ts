@@ -12,11 +12,11 @@ export class LoginComponent {
 
   constructor( private userService: UserService, private router: Router) { }
 
-  LogIn(data) {
-    this.userService.LogIn(data.value).subscribe((response: { token: string }) => {
+  login(data) {
+    this.userService.login(data.value).subscribe((response: { token: string }) => {
       console.log(data);
       localStorage.setItem('token', response.token);
-      this.router.navigate(['foro']);
+      this.router.navigate(['home']);
     }, (error) => {
       alert('Incorrect user');
       console.log(error);
