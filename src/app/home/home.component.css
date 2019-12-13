@@ -1,4 +1,43 @@
-body,html{
-    height: 100%;
-    min-height: 100%;
+body {
+    background: url('../../assets/images/purple.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  #nav {
+    color: #282828;
+  }
+
+  .navbar-brand{
+      color: white;
+  }
+  .nav-link{
+      color: white;
+  }
+
+  #login{
+      color: white;
+  }
+  #register{
+    color: white;
+}
+#home{
+    color: grey;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+  #image3{
+      padding-right: 10px;
+  }
+
+  #image2{
+    padding-right: 10px;
+}
+#image1{
+    padding-right: 10px;
 }
