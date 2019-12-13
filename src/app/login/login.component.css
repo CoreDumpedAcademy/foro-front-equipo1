@@ -1,0 +1,176 @@
+body{
+    background-color: #BB86FC;
+}
+.rectangulo{
+    position: absolute;
+    left: 70.42%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #282828;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.foto{
+    position: absolute;
+    left: 0%;
+    right: 70.42%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.texto{  
+    position: absolute;
+    left: 25.43%;
+    right: 29.43%;;
+    top: 9.77%;
+    bottom: 77.34%;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #BB86FC;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.username{
+    position: absolute;
+    left: 17.61%;
+    top: 32.05%;
+    bottom: 63.55%;
+    width: 60%;
+
+    background-color: #282828;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+.password{
+    position: absolute;
+    left: 17.61%;
+    top: 43.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+::placeholder{
+    color: #BB86FC;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #BB86FC;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+
+    position: absolute;
+    bottom: 32.08%;
+    left: 23.61%;
+
+    font-family: 'Oxygen', sans-serif;
+    
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .rectangulo{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+    
+        background: #282828;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #BB86FC;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    
+        position: absolute;
+        bottom: 32.08%;
+        left: 23.61%;
+    
+        font-family: 'Oxygen', sans-serif;
+        
+    }
+
+    h3{  
+        position: absolute;
+        left: 40.43%;
+        top: 9.77%;
+        bottom: 77.34%;
+    
+        font-family: Noto Sans TC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #BB86FC;
+        font-family: 'Oxygen', sans-serif;
+    }
+}
