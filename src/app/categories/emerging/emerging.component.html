@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>Emerging</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -17,8 +17,8 @@
 
         <ul class="list-unstyled components">
             <p>Navigation</p>
-            <li class="active">
-                <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+            <li>
+                <a [routerLink]="['/home']" routerLinkActive="router-link-active" id="home">Home</a>
             </li>
             <li>
                 <a [routerLink]="['/login']" routerLinkActive="router-link-active"  id="login">Login</a>
@@ -67,9 +67,11 @@
         </ul>
 
         <ul class="list-unstyled CTAs">
-            
             <li>
-                <a ng-click="Logout()" class="article">Sample</a>
+                <a href="#" class="download">Sample</a>
+            </li>
+            <li>
+                <a href="#" class="article">Sample</a>
             </li>
         </ul>
     </nav>
@@ -80,7 +82,7 @@
     <img src="../../assets/images/forotech4.png" width="95" height="95" alt="">
   </a>
                 <div class="container-fluid">
-                  <h1 class="text-center"> Home</h1>
+                  <h1 class="text-center"> Emerging Technology</h1>
 
                     <button type="button" id="sidebarCollapse" class="btn text-sidebar bg-red">
                         <i class="fas fa-align-left"></i>
