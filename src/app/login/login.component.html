@@ -23,7 +23,7 @@
         <a [routerLink]="['/register']"><button class="registerbutton" type="submit" style="vertical-align:middle"><span>Register</span></button></a>
       </div>
       <div class="texto">LOGIN</div>
-      <form #formulario="ngForm" (ngSubmit)="login(formulario.form)">
+      <form #formulario="ngForm" (ngSubmit)="saveData(formulario.form)">
         <input placeholder="Username" name="userName" type="text" class="form-control" id="username" ngModel required><br>
         <input placeholder="Password" name="password" type="password" class="form-control" id="password" ngModel required><br>
         <button class="button" type="submit" style="vertical-align:middle"><span>Send</span></button>
