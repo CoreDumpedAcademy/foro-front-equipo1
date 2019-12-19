@@ -1,0 +1,8 @@
+<div class="chat">
+  <!--author message date-->
+  <div *ngFor="let message of messages " class="mensaje">
+    <h5>{{ message.author }}</h5>
+    <p>{{ message.message }}</p>
+    <p>{{ message.date }}</p>
+  </div>
+</div>
