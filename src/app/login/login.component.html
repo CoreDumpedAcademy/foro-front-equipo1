@@ -24,13 +24,10 @@
       </div>
       <div class="texto">LOGIN</div>
       <form #formulario="ngForm" (ngSubmit)="login(formulario.form)">
-        <input placeholder="Username" name="userName" type="text" class="form-control" id="username" ngModel required><br>
+        <input placeholder="Username" name="username" type="text" class="form-control" id="username" ngModel required><br>
         <input placeholder="Password" name="password" type="password" class="form-control" id="password" ngModel required><br>
         <button class="button" type="submit" style="vertical-align:middle"><span>Send</span></button>
       </form>
-    </div>
-  
-
-    
+    </div>    
 </body>
 </html>
