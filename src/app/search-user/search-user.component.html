@@ -3,5 +3,6 @@
     <option *ngFor="let user of users">{{ user.username }}</option>
   </select>
 
+  <input type="text" name="msg" id="msg" [(ngModel)]="msg" required> <button (click)="sendMsg()">Enviar mensaje</button>
   <p *ngFor="let message of allMessages"> {{ message.message }} </p>
 </div>
