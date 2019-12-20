@@ -26,6 +26,9 @@
             <li>
               <a [routerLink]="['/register']" routerLinkActive="router-link-active"  id="register">Register</a>
           </li>
+          <li>
+            <a [routerLink]="['/messages']" routerLinkActive="router-link-active"  id="messages">Messages</a>
+        </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" id="categories">Categories</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -100,7 +103,7 @@
             </nav>
 <div class="container">
     <div *ngFor="let post of posts; index as i"><br>
-        <div class="media" *ngIf="i = 0">
+        <div class="media" *ngIf="i == 0">
             <div class="media-left media-top">
               <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px"    id="image1">
             </div>
@@ -129,18 +132,7 @@
               </div>
       </div>
     </div>
-    <div class="container">
-        <div class="media">
-        <div class="media-left media-top">
-          <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:80px" id="image3">
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Media Top</h4>
-          <h5>pepitoP</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur, accusamus est ducimus culpa vel! Voluptas id minima quasi voluptatum ad! Nihil rerum, maxime deserunt vel debitis repellendus ut ducimus!</p>
-          <a [routerLink]="['/home']" routerLinkActive="router-link-active"> Go back</a>
-        </div>
-      </div></div>
+    
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

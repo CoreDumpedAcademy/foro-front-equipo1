@@ -26,6 +26,9 @@
             <li>
               <a [routerLink]="['/register']" routerLinkActive="router-link-active"  id="register">Register</a>
           </li>
+          <li>
+            <a [routerLink]="['/messages']" routerLinkActive="router-link-active"  id="messages">Messages</a>
+        </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" id="categories">Categories</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -112,17 +115,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="container">
-                    <div class="media">
-                    <div class="media-left media-top">
-                      <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px" id="imagen2">
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">Media Top</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur, accusamus est ducimus culpa vel! Voluptas id minima quasi voluptatum ad! Nihil rerum, maxime deserunt vel debitis repellendus ut ducimus!</p>
-                      <button type="button" class="btn btn-outline-dark btn-block" (click)="setStorage(post.header)" [routerLink]="['/showpost']" routerLinkActive="router-link-active" >Go to post</button>
-                    </div>
-                  </div></div>
+                
             </div>
 </div>
 </div>
