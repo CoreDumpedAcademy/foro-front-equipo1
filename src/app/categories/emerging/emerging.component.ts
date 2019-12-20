@@ -22,7 +22,7 @@ export class EmergingComponent implements OnInit {
 
   setStorage(data){
     localStorage.removeItem('header');
-    localStorage.setItem('header', data)
+    localStorage.setItem('post', JSON.stringify({header: data.header, date: data.date, username: data.username}))
   }
   
 }

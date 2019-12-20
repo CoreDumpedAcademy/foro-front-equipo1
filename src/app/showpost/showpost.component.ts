@@ -19,7 +19,7 @@ export class ShowpostComponent implements OnInit {
   }
 
   getPosts() {
-    this.data1 = localStorage.getItem('header');
+    this.data1 = JSON.parse(localStorage.getItem('post'));
     this.postService.sendPostAndRes(this.data1).subscribe((data: Post[]) => {
       console.log(data);
       this.postsandresps = data;
@@ -27,6 +27,6 @@ export class ShowpostComponent implements OnInit {
   }
 
   clear(){
-    localStorage.removeItem('header')
+    localStorage.removeItem('post')
   }
 }
