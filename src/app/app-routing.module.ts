@@ -16,10 +16,12 @@ import { RoboticComponent } from './categories/robotic/robotic.component';
 import { SoftwareComponent } from './categories/software/software.component';
 import { ShowpostComponent } from './showpost/showpost.component';
 import { LogoutComponent } from './logout/logout.component';
+import { SearchUserComponent } from './search-user/search-user.component';
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
   { path: 'home', component: HomeComponent,}, //canActivate: [AuthGuard]},
   { path: 'bio', component: BiotechnologyComponent },
   { path: 'electrical', component: ElectricalComponent},
@@ -34,7 +36,6 @@ const routes: Routes = [
   { path: 'showpost', component: ShowpostComponent},
   { path: 'logout', component: LogoutComponent},
   { path: '**', pathMatch:'full', redirectTo: 'login'},
-
 ];
 
 @NgModule({
