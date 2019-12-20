@@ -1,152 +1,70 @@
-.rectangulo{
-    position: absolute;
-    left: 70.42%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: #282828;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.foto{
-    position: absolute;
-    left: 0%;
-    right: 70.42%;
-    top: 0%;
-    bottom: 0%;
-}
-
-.texto{  
-    position: absolute;
-    left: 18.43%;
-    top: 9.77%;
-    bottom: 77.34%;
-
-    font-family: Noto Sans TC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #BB86FC;
-    font-family: 'Oxygen', sans-serif;
-}
-
-#username{
-    position: absolute;
-    left: 17.61%;
-    top: 27.05%;
-    bottom: 63.55%;
-    width: 60%;
-
-    background-color: #282828;
-    color: #FFFFFF;
-
-    border: none;
-    border-bottom: 3px solid #BB86FC;
-
-    font-family: 'Oxygen', sans-serif;
-}
-
-#email{
-    position: absolute;
-    left: 17.61%;
-    top: 37.36%;
-    bottom: 52.08%;
-    width: 60%;
-
-    background-color: #282828;
-    color: #FFFFFF;
-
-    border: none;
-    border-bottom: 3px solid #BB86FC;
-
-    font-family: 'Oxygen', sans-serif;
-}
-
-#password{
-    position: absolute;
-    left: 17.61%;
-    top: 47.36%;
-    bottom: 52.08%;
-    width: 60%;
-
-    background-color: #282828;
-    color: #FFFFFF;
-
-    border: none;
-    border-bottom: 3px solid #BB86FC;
-
-    font-family: 'Oxygen', sans-serif;
-}
-
-#birthday{
-    position: absolute;
-    left: 17.61%;
-    top: 57.36%;
-    bottom: 52.08%;
-    width: 60%;
-
-    background-color: #282828;
-    color: #FFFFFF;
-
-    border: none;
-    border-bottom: 3px solid #BB86FC;
-
-    font-family: 'Oxygen', sans-serif;
-}
-
-#country{
-    position: absolute;
-    left: 17.61%;
-    top: 67.36%;
-    bottom: 52.08%;
-    width: 60%;
-
-    background-color: #282828;
-    color: #FFFFFF;
-
-    border: none;
-    border-bottom: 3px solid #BB86FC;
-
-    font-family: 'Oxygen', sans-serif;
-}
-
-.loginbutton{
-    position: absolute;
-    top: 0%;
-    left: 0%;
+.login-register {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
     width: 100%;
-    padding: 2%;
+    padding: 10% 0;
+    position: fixed;
+}
+  
+.login-box {
+    width: 410px;
+    margin: 0 auto; 
+    background: #282828;
+}
+
+.login-box .footer {
+    width: 100%;
+    left: 0px;
+    right: 0px; 
+}
+
+.login-box .social {
+    display: block;
+    margin-bottom: 30px; 
+}
+  
+#recoverform {
+    display: none; 
+}
+  
+.login-sidebar{
+    padding: 0px;
+    margin-top: 0px; 
+}
+
+.login-sidebar .login-box {
+    right: 0px;
+    position: absolute;
+    height: 100%; 
+}
+
+.registerbutton{
+    position: absolute;
+    top: 0%;
+    left: -5.3%;
+    width: 115%;
+    padding: 3%;
     transition: all 0.5s;
     cursor: pointer;
     font-size: larger;
-
+    
     border: none;
     background-color: #BB86FC;
     color: #FFFFFF;
-
+    
     font-family: 'Oxygen', sans-serif;
 }
-
-.form-control:focus {
-    outline: none;
-    box-shadow:none !important;
-    border:1px solid #422918;
-}
-
-.loginbutton span {
+    
+.registerbutton span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
-  
-.loginbutton span:after {
+      
+.registerbutton span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -155,11 +73,11 @@
     transition: 0.5s;
 }
   
-.loginbutton:hover span {
+.registerbutton:hover span {
     padding-right: 25px;
 }
   
-.loginbutton:hover span:after {
+.registerbutton:hover span:after {
     opacity: 1;
     right: 0;
 }
@@ -211,56 +129,102 @@
     right: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .rectangulo{
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-    
-        background: #282828;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+#username{
+    position: absolute;
+    left: 19.61%;
+    top: 27.05%;
+    bottom: 63.55%;
+    width: 60%;
 
-    .button {
-        display: inline-block;
-        border-radius: 4px;
-        background-color: #BB86FC;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 28px;
-        padding: 20px;
-        width: 150px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-    
-        position: absolute;
-        bottom: 32.08%;
-        left: 23.61%;
-    
-        font-family: 'Oxygen', sans-serif;
-        
-    }
+    background-color: #282828;
+    color: #FFFFFF;
 
-    h3{  
-        position: absolute;
-        left: 40.43%;
-        top: 9.77%;
-        bottom: 77.34%;
-    
-        font-family: Noto Sans TC;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    
-        color: #BB86FC;
-        font-family: 'Oxygen', sans-serif;
-    }
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+#email{
+    position: absolute;
+    left: 19.61%;
+    top: 37.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+    color: #FFFFFF;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+#password{
+    position: absolute;
+    left: 19.61%;
+    top: 47.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+    color: #FFFFFF;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+#birthdate{
+    position: absolute;
+    left: 19.61%;
+    top: 57.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+    color: #FFFFFF;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+#country{
+    position: absolute;
+    left: 19.61%;
+    top: 67.36%;
+    bottom: 52.08%;
+    width: 60%;
+
+    background-color: #282828;
+    color: #FFFFFF;
+
+    border: none;
+    border-bottom: 3px solid #BB86FC;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+.texto{  
+    position: absolute;
+    left: 13.43%;
+    right: 29.43%;;
+    top: 18.77%;
+    bottom: 77.34%;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #BB86FC;
+    font-family: 'Oxygen', sans-serif;
 }

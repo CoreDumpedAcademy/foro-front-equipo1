@@ -154,6 +154,15 @@ a.download {
 #categories{
     color: white;
 }
+#home{
+    color: white;
+}
+#imagen2{
+    padding-right: 10px;
+}
+#imagen1{
+    scroll-padding-right: 10px;
+}
 
 a.article,
 a.article:hover {
@@ -187,7 +196,6 @@ a.article:hover {
         display: none;
     }
 }
-
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
