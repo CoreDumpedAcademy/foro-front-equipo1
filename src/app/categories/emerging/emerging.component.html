@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>Emerging</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -17,8 +17,8 @@
 
         <ul class="list-unstyled components">
             <p>Navigation</p>
-            <li class="active">
-                <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+            <li>
+                <a [routerLink]="['/home']" routerLinkActive="router-link-active" id="home">Home</a>
             </li>
             <li>
                 <a [routerLink]="['/login']" routerLinkActive="router-link-active"  id="login">Login</a>
@@ -65,10 +65,10 @@
         </ul>
 
         <ul class="list-unstyled CTAs">
-            
             <li>
-                    <a [routerLink]="['/logout']" routerLinkActive="router-link-active"  id="logout">Logout</a>
-                </li>
+                <a [routerLink]="['/logout']" routerLinkActive="router-link-active"  id="logout">Logout</a>
+            </li>
+            
         </ul>
     </nav>
 
@@ -78,7 +78,7 @@
     <img src="../../assets/images/forotech4.png" width="95" height="95" alt="">
   </a>
                 <div class="container-fluid">
-                  <h1 class="text-center"> Home</h1>
+                  <h1 class="text-center"> Emerging Technology</h1>
 
                     <button type="button" id="sidebarCollapse" class="btn text-sidebar bg-red">
                         <i class="fas fa-align-left"></i>
@@ -91,37 +91,39 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" [routerLink]="['/logout']" routerLinkActive="router-link-active" >Switch User</a>
-                            </li>
+                                    <a class="nav-link" [routerLink]="['/logout']" routerLinkActive="router-link-active" >Switch User</a>
+                                </li>
                             
                         </ul>
                     </div>
                 </div>
             </nav>
 <div class="container">
-    <div *ngFor="let post of posts; index as i"><br>
-        <div class="media">
-            <div class="media-left media-top">
-              <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px">
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">{{post.header}}</h4>
-              <button type="button" class="btn btn-outline-dark btn-block" (click)="setStorage(post.header)" [routerLink]="['/showpost']" routerLinkActive="router-link-active" >Go to post</button>
-            </div>
-          </div>
-      </div>
+        <div class="container">
+                <div *ngFor="let post of posts; index as i"><br>
+                    <div class="media">
+                        <div class="media-left media-top">
+                          <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px" id="imagen1">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">{{post.header}}</h4>
+                          <button type="button" class="btn btn-outline-dark btn-block" (click)="setStorage(post.header)" [routerLink]="['/showpost']" routerLinkActive="router-link-active" >Go to post</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="container">
+                    <div class="media">
+                    <div class="media-left media-top">
+                      <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Media Top</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur, accusamus est ducimus culpa vel! Voluptas id minima quasi voluptatum ad! Nihil rerum, maxime deserunt vel debitis repellendus ut ducimus!</p>
+                      <button type="button" class="btn btn-outline-dark btn-block" (click)="setStorage(post.header)" [routerLink]="['/showpost']" routerLinkActive="router-link-active" >Go to post</button>
+                    </div>
+                  </div></div>
     </div>
-    <div class="container">
-        <div class="media">
-        <div class="media-left media-top">
-          <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px">
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Media Top</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur, accusamus est ducimus culpa vel! Voluptas id minima quasi voluptatum ad! Nihil rerum, maxime deserunt vel debitis repellendus ut ducimus!</p>
-          <button type="button" class="btn btn-outline-dark btn-block" (click)="setStorage(post.header)" [routerLink]="['/showpost']" routerLinkActive="router-link-active" >Go to post</button>
-        </div>
-      </div></div>
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
