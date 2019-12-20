@@ -163,6 +163,9 @@ a.download {
 #logout{
     color: white;
 }
+#messages{
+    color: white;
+}
 
 a.article,
 a.article:hover {

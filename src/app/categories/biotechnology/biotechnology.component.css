@@ -163,6 +163,9 @@ a.download {
 #imagen1{
     scroll-padding-right: 10px;
 }
+#messages{
+    color: white;
+}
 
 a.article,
 a.article:hover {

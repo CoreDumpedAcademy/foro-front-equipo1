@@ -21,7 +21,6 @@ import { SearchUserComponent } from './search-user/search-user.component';
 const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
   { path: 'home', component: HomeComponent,}, //canActivate: [AuthGuard]},
   { path: 'bio', component: BiotechnologyComponent },
   { path: 'electrical', component: ElectricalComponent},
@@ -35,6 +34,7 @@ const routes: Routes = [
   { path: 'software', component: SoftwareComponent},
   { path: 'showpost', component: ShowpostComponent},
   { path: 'logout', component: LogoutComponent},
+  { path: 'messages', component: SearchUserComponent},
   { path: '**', pathMatch:'full', redirectTo: 'login'},
 ];
 

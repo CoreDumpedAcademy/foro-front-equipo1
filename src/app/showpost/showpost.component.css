@@ -160,6 +160,9 @@ a.download {
 #image3{
     padding-right: 10px;
 }
+#messages{
+    color: white;
+}
 
 a.article,
 a.article:hover {
