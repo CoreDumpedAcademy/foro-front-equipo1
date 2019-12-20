@@ -160,6 +160,9 @@ a.download {
 #imagen2{
     padding-right: 10px;
 }
+#imagen1{
+    scroll-padding-right: 10px;
+}
 
 a.article,
 a.article:hover {

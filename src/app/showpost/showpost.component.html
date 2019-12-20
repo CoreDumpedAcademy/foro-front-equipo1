@@ -61,16 +61,14 @@
                 </li>
                 </ul>
             </li>
-            <li>
-                <a href="#" id="logout">Logout</a>
-            </li>
+            
         </ul>
 
         <ul class="list-unstyled CTAs">
             
-            <li>
-                <a ng-click="Logout()" class="article">Sample</a>
-            </li>
+                <li>
+                        <a [routerLink]="['/logout']" routerLinkActive="router-link-active"  id="logout">Logout</a>
+                    </li>
         </ul>
     </nav>
 
@@ -121,6 +119,8 @@
                     <div class="media-body">
                       <h4 class="media-heading">{{post.userName}}</h4>
                       <p>{{post.header}}</p>
+                      <a [routerLink]="['/home']" routerLinkActive="router-link-active"> Go Back</a>
+
                     </div>
                   </div>
               </div>
@@ -129,13 +129,13 @@
     <div class="container">
         <div class="media">
         <div class="media-left media-top">
-          <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px" id="image3">
+          <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:80px" id="image3">
         </div>
         <div class="media-body">
           <h4 class="media-heading">Media Top</h4>
           <h5>pepitoP</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur, accusamus est ducimus culpa vel! Voluptas id minima quasi voluptatum ad! Nihil rerum, maxime deserunt vel debitis repellendus ut ducimus!</p>
-          <a [routerLink]="['/showpost']" routerLinkActive="router-link-active"> Go to post</a>
+          <a [routerLink]="['/home']" routerLinkActive="router-link-active"> Go back</a>
         </div>
       </div></div>
 </div>

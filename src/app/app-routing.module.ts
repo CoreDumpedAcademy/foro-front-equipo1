@@ -15,6 +15,7 @@ import { QuantumComponent } from './categories/quantum/quantum.component';
 import { RoboticComponent } from './categories/robotic/robotic.component';
 import { SoftwareComponent } from './categories/software/software.component';
 import { ShowpostComponent } from './showpost/showpost.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent},
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'robotic', component: RoboticComponent},
   { path: 'software', component: SoftwareComponent},
   { path: 'showpost', component: ShowpostComponent},
+  { path: 'logout', component: LogoutComponent},
   { path: '**', pathMatch:'full', redirectTo: 'login'},
 
 ];

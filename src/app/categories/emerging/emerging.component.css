@@ -157,6 +157,12 @@ a.download {
 #home{
     color: white;
 }
+#imagen1{
+    padding-right: 10px;
+}
+#logout{
+    color: white;
+}
 
 a.article,
 a.article:hover {

@@ -21,6 +21,7 @@ import { BiotechnologyComponent } from './categories/biotechnology/biotechnology
 import { EmergingComponent } from './categories/emerging/emerging.component';
 import { OtherComponent } from './categories/other/other.component';
 import { ShowpostComponent } from './showpost/showpost.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ShowpostComponent } from './showpost/showpost.component';
     EmergingComponent,
     OtherComponent,
     ShowpostComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,

@@ -61,18 +61,14 @@
                 </li>
                 </ul>
             </li>
-            <li>
-                <a href="#" id="logout">Logout</a>
-            </li>
+           
         </ul>
 
         <ul class="list-unstyled CTAs">
             <li>
-                <a href="#" class="download">Sample</a>
-            </li>
-            <li>
-                <a href="#" class="article">Sample</a>
-            </li>
+                    <a [routerLink]="['/logout']" routerLinkActive="router-link-active"  id="logout">Logout</a>
+                </li>
+            
         </ul>
     </nav>
 
@@ -95,8 +91,8 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Switch User</a>
-                            </li>
+                                    <a class="nav-link" [routerLink]="['/logout']" routerLinkActive="router-link-active" >Switch User</a>
+                                </li>
                             
                         </ul>
                     </div>
@@ -107,11 +103,11 @@
                             <div *ngFor="let post of posts; index as i"><br>
                                 <div class="media">
                                     <div class="media-left media-top">
-                                      <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px">
+                                      <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px" id="imagen1">
                                     </div>
                                     <div class="media-body">
                                       <h4 class="media-heading">{{post.header}}</h4>
-                                        <a [routerLink]="['/showpost']" routerLinkActive="router-link-active"> Go to post</a>
+                                      <button type="button" class="btn btn-outline-dark btn-block" (click)="setStorage(post.header)" [routerLink]="['/showpost']" routerLinkActive="router-link-active" >Go to post</button>
                                     </div>
                                   </div>
                               </div>
@@ -124,7 +120,7 @@
                                 <div class="media-body">
                                   <h4 class="media-heading">Media Top</h4>
                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur, accusamus est ducimus culpa vel! Voluptas id minima quasi voluptatum ad! Nihil rerum, maxime deserunt vel debitis repellendus ut ducimus!</p>
-                                  <a [routerLink]="['/showpost']" routerLinkActive="router-link-active"> Go to post</a>
+                                  <button type="button" class="btn btn-outline-dark btn-block" (click)="setStorage(post.header)" [routerLink]="['/showpost']" routerLinkActive="router-link-active" >Go to post</button>
                                 </div>
                               </div></div>
                     </div>

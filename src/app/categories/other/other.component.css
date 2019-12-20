@@ -157,6 +157,10 @@ a.download {
 #home{
     color: white;
 }
+#imagen1{
+    padding-right: 10px;
+}
+
 
 a.article,
 a.article:hover {
