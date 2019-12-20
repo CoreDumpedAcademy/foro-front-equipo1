@@ -20,6 +20,7 @@ import { RoboticComponent } from './categories/robotic/robotic.component';
 import { BiotechnologyComponent } from './categories/biotechnology/biotechnology.component';
 import { EmergingComponent } from './categories/emerging/emerging.component';
 import { OtherComponent } from './categories/other/other.component';
+import { ShowpostComponent } from './showpost/showpost.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { OtherComponent } from './categories/other/other.component';
     BiotechnologyComponent,
     EmergingComponent,
     OtherComponent,
+    ShowpostComponent,
   ],
   imports: [
     BrowserModule,

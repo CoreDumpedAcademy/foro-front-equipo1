@@ -14,6 +14,7 @@ import { OtherComponent } from './categories/other/other.component';
 import { QuantumComponent } from './categories/quantum/quantum.component';
 import { RoboticComponent } from './categories/robotic/robotic.component';
 import { SoftwareComponent } from './categories/software/software.component';
+import { ShowpostComponent } from './showpost/showpost.component';
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent},
@@ -29,7 +30,9 @@ const routes: Routes = [
   { path: 'quantum', component: QuantumComponent},
   { path: 'robotic', component: RoboticComponent},
   { path: 'software', component: SoftwareComponent},
+  { path: 'showpost', component: ShowpostComponent},
   { path: '**', pathMatch:'full', redirectTo: 'login'},
+
 ];
 
 @NgModule({

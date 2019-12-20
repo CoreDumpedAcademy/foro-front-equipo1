@@ -102,20 +102,33 @@
                     </div>
                 </div>
             </nav>
-<div class="container">
-        <h2>Lorem Ipsum Dolor (1)</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor (2)</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h3>Lorem Ipsum Dolor (3)</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+            <div class="container">
+                    <div class="container">
+                            <div *ngFor="let post of posts; index as i"><br>
+                                <div class="media">
+                                    <div class="media-left media-top">
+                                      <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px">
+                                    </div>
+                                    <div class="media-body">
+                                      <h4 class="media-heading">{{post.header}}</h4>
+                                        <a [routerLink]="['/showpost']" routerLinkActive="router-link-active"> Go to post</a>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="container">
+                                <div class="media">
+                                <div class="media-left media-top">
+                                  <img src="../../assets/images/img_avatar1.png" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading">Media Top</h4>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur, accusamus est ducimus culpa vel! Voluptas id minima quasi voluptatum ad! Nihil rerum, maxime deserunt vel debitis repellendus ut ducimus!</p>
+                                  <a [routerLink]="['/showpost']" routerLinkActive="router-link-active"> Go to post</a>
+                                </div>
+                              </div></div>
+                    </div>
+                    
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

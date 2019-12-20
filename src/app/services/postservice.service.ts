@@ -9,13 +9,15 @@ export class PostserviceService {
 
   constructor(private http: HttpClient, private router: Router) { }
 
+  private adress = 'http://localhost:3000/';
+
 
   createPost(data){
     this.http.post('http://localhost:3000/post/create', data)
   }
 
-  getPosts(){
-    this.http.get('http://localhost:3000/post/get')
+  getPosts() {
+    return this.http.get(`${this.adress}get/`);
   }
   
   Delete(data){
@@ -31,6 +33,10 @@ export class PostserviceService {
   }
 
   sendPostAndRes(data){
-    this.http.post('http://localhost:3000/post/postAndRes',data)
+    return this.http.post('http://localhost:3000/post/postAndRes',data)
+  }
+
+  sendCategoryPosts(data){
+    return this.http.post('http://localhost:3000/post/sendCategory', data)
   }
 }
