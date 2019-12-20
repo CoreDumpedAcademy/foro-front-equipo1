@@ -10,6 +10,7 @@ import { UserService } from './services/user.service';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
+import { SearchUserComponent } from './search-user/search-user.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
+    SearchUserComponent,
   ],
   imports: [
     BrowserModule,

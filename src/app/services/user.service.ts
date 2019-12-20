@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { map } from 'rxjs/operators'
 @Injectable({
   providedIn: 'root'
 })
@@ -27,5 +28,18 @@ export class UserService {
   Logout() {
     localStorage.removeItem('token');
     this.router.navigate(['home']);
+  }
+
+  getAllUsers() {
+    return this.http.get('http://localhost:3000/user/allUsers')
+      // .pipe(map(data => {return data['username'].items}));
+  }
+
+  getReceivedMessages(data) {
+    return this.http.post('http://localhost:3000/message/getReceivedMsg', data)
+  }
+
+  getSendedMessages(data) {
+    return this.http.post('http://localhost:3000/message/getSentMsg', data)  
   }
 }

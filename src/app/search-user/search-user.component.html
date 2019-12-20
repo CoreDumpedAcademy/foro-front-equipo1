@@ -1,0 +1,7 @@
+<div>
+  <select #f (change)="getUser(f.value)">
+    <option *ngFor="let user of users">{{ user.username }}</option>
+  </select>
+
+  <p *ngFor="let message of allMessages"> {{ message.message }} </p>
+</div>
