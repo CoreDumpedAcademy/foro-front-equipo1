@@ -16,10 +16,13 @@ export class RegisterComponent implements OnInit {
   }
 
   register(data) {
-    console.log(data.value);
-    this.userService.Register(data.value).subscribe((response: { token: string }) => {
-      console.log(data);
-      localStorage.setItem('token', response.token);
+    this.userService.Register(data.value).subscribe((res) => {      
+      const token = {
+        userData: res['registerPayload'],
+        token: res['token']
+      }
+
+      localStorage.setItem('token', JSON.stringify(token));
       this.router.navigate(['home']);
     }, (error) => {
       alert('Registration error');
