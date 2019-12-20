@@ -27,4 +27,9 @@ export class LoginComponent {
       }
     );
   }
+
+  saveData(data){
+    localStorage.setItem('userName', data.userName);
+    this.login(data);
+  }
 }
