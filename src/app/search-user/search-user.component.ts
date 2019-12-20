@@ -11,8 +11,7 @@ export class SearchUserComponent implements OnInit {
 
   users: any[];
   selected
-  sendedMessages:[] = []
-  receivedMessages:[] = []
+  msg = ""
   allMessages:[] = []
 
   constructor(private calls: UserService) { }
@@ -42,7 +41,18 @@ export class SearchUserComponent implements OnInit {
         this.allMessages.concat(msg['messages'])
       })
     }
+  }
 
-    
+  sendMsg() {
+    const data = {
+      author: JSON.parse(localStorage.getItem('token'))['userData'].username,
+      receiver: this.selected,
+      message: this.msg
+    }
+
+    console.log(data)
+    this.calls.createMsg(data).subscribe(msg => {
+      console.log(msg);
+    })
   }
 }

@@ -42,4 +42,8 @@ export class UserService {
   getSendedMessages(data) {
     return this.http.post('http://localhost:3000/message/getSentMsg', data)  
   }
+
+  createMsg(data) {
+    return this.http.post('http://localhost:3000/message/sendMsg', data)
+  }
 }
